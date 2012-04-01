@@ -840,7 +840,7 @@
         <item>90</item>
     </string-array> 
 
-    <string-array name="root_access_entries"> 
+    <!-- <string-array name="root_access_entries"> 
         <item>@string/root_access_none</item> 
         <item>@string/root_access_apps</item> 
         <item>@string/root_access_adb</item> 
@@ -852,7 +852,7 @@
         <item>1</item> 
         <item>2</item> 
         <item>3</item> 
-    </string-array> 
+    </string-array> --> 
 
     <!-- Profile mode options. -->
     <string-array name="profile_entries">

@@ -1347,16 +1347,6 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <activity android:name=".profiles.ProfilesSettings" />
-
-        <activity android:name=".profiles.ProfileConfig" />
-
-        <activity android:name=".profiles.AppGroupList" />
-
-        <activity android:name=".profiles.AppGroupConfig" />
-
-        <activity android:name=".profiles.ProfileGroupConfig" />
-
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
@@ -1384,13 +1374,13 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/wireless_settings" />
         </activity>
-		
-	<activity android:name=".LightLevelsActivity"
-		android:label="@string/backlight_settings">
-		<intent-filter>
-			<action android:name="android.intent.action.MAIN" />
-		</intent-filter>
-	</activity>
+
+		<activity android:name=".LightLevelsActivity"
+				android:label="@string/backlight_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
