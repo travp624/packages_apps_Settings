@@ -191,5 +191,4 @@
         <item name="android:shadowRadius">2.0</item>
         <item name="android:shadowColor">#B0000000</item>
     </style>
-
 </resources>

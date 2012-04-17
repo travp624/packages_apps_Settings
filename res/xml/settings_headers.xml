@@ -112,15 +112,9 @@
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
 
-	<!-- PERSONAL -->
-    <header android:title="@string/header_category_personal" />
 
-	<!-- Profiles -->
-    <!-- <header
-        android:fragment="com.android.settings.profiles.ProfilesSettings"
-        android:icon="@drawable/ic_settings_profiles"
-        android:title="@string/profiles_settings_title"
-        android:id="@+id/profiles_settings" /> -->
+    <!-- PERSONAL -->
+    <header android:title="@string/header_category_personal" />
 
     <!-- Data Sync. The settings activity will ensure this is resolved to an
          activity on the system image, otherwise it will remove this

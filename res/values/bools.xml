@@ -25,7 +25,4 @@
 
     <!-- Display additional System Update menu if true -->
     <bool name="config_additional_system_update_setting_enable">false</bool>
-    <!-- Whether or not there is a notification led that is too intrusive to be pulsing
-         constantly -->
-    <add-resource type="bool" name="has_intrusive_led"></add-resource>
 </resources>
