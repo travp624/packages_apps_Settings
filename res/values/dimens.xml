@@ -34,4 +34,5 @@
     <dimen name="volume_seekbar_side_margin">8dip</dimen>
 
     <dimen name="crypt_clock_size">100sp</dimen>
+    <dimen name="dialog_light_settings_width">400dip</dimen>
 </resources>

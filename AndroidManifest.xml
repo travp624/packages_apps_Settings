@@ -1375,8 +1375,10 @@
                 android:resource="@id/wireless_settings" />
         </activity>
 
-		<activity android:name=".LightLevelsActivity"
-				android:label="@string/backlight_settings">
+        <activity android:name=".notificationlight.NotificationLightSettings" />
+
+        <activity android:name=".LightLevelsActivity"
+                android:label="@string/backlight_settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
