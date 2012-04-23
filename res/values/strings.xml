@@ -3847,6 +3847,9 @@ found in the list of installed apps.</string>
     <string name="quiet_hours_dim_title">Disable notification light</string>
     <string name="quiet_hours_active_from">Active from</string>
     <string name="quiet_hours_active_to">to</string>
+    <string name="quiet_hours_haptic">Disable haptic feedback</string>
+    <string name="quiet_hours_haptic_on">Haptic feedback will be disabled</string>
+    <string name="quiet_hours_haptic_off">Haptic feedback will function as normal</string>
 
     <!-- time range preference -->
     <string name="start_time_title">Start</string>
@@ -3972,9 +3975,33 @@ found in the list of installed apps.</string>
     <string name="profile_lockmode_default_summary">Use system default</string>
     <string name="profile_lockmode_insecure_summary">Use insecure lock screen</string>
     <string name="profile_lockmode_disabled_summary">Lockscreen is disabled</string>
-
     <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
 
+    <!-- Profiles - NFC writer settings -->
+    <string name="profile_write_nfc_tag">Write to NFC tag</string>
+    <string name="profile_write_touch_tag">Touch tag to write</string>
+    <string name="profile_write_success">Tag successfully written</string>
+    <string name="profile_write_failed">Tag writing failed!</string>
+    <string name="profile_selected">Profile selected: %1$s</string>
+    <string name="profile_nfc_text">Writing a profile to an NFC tag allows you to tap the tag to select that profile. Tapping a second time will select the previously selected profile.</string>
+
+    <!-- Connection override toggles (not all are used at this time ) -->
+    <string name="possibleButtons">Possible Buttons</string>
+    <string name="toggleWifi">Wi-Fi</string>
+    <string name="toggleWifiAp">Portable Wi-Fi hotspot</string>
+    <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleGPS">GPS</string>
+    <string name="toggleData">Mobile Data</string>
+    <string name="toggleSync">Data Sync</string>
+    <string name="toggle2g3g">2G/3G</string>
+    <string name="toggleSound">Ring Mode</string>
+    <string name="toggleBrightness">Brightness</string>
+    <string name="toggleAutoRotate">Orientation</string>
+    <string name="toggleScreenTimeout">Screen Timeout</string>
+    <string name="toggleAirplane">Airplane</string>
+    <string name="toggleFlashlight">Flashlight</string>
+    <string name="toggleLockScreen">Lock Screen</string>
+    <string name="toggleWimax">WiMAX</string>
 
     <string name="ok">Ok</string>
 
