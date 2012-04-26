@@ -1592,25 +1592,10 @@
 
     <!-- Profiles - Quiet hours -->
     <string name="quiet_hours_title">Stille uren</string>
-    <string name="quiet_hours_summary">Toon/verander uren wanneer apparaat stil moet zijn</string>
-    <string name="quiet_hours_note_title">Opmerking</string>
-    <string name="quiet_hours_note_summary">Inkomende oproepen zullen normaal functioneren tijdens stille uren</string>
-    <string name="quiet_hours_enabled">Schakel stille uren in</string>
-    <string name="quiet_hours_enabled_on">Stille uren worden geforceerd</string>
-    <string name="quiet_hours_enabled_off">Notificaties zullen normaal functioneren</string>
     <string name="quiet_hours_start">Begin stille uren</string>
     <string name="quiet_hours_start_summary">Wanneer beginnen met het forceren van stille uren</string>
     <string name="quiet_hours_end">Einde stille uren</string>
     <string name="quiet_hours_end_summary">Wanneer stoppen met het forceren van stille uren</string>
-    <string name="quiet_hours_mute">Demp notificaties</string>
-    <string name="quiet_hours_mute_on">Er zullen geen geluiden worden afgespeeld</string>
-    <string name="quiet_hours_mute_off">Geluiden zullen normaal worden afgespeeld</string>
-    <string name="quiet_hours_still">Schakel trillen uit</string>
-    <string name="quiet_hours_still_on">Apparaat zal niet trillen</string>
-    <string name="quiet_hours_still_off">Apparaat zal normaal trillen</string>
-    <string name="quiet_hours_dim">Schakel notificatie-LED uit</string>
-    <string name="quiet_hours_dim_on">Notificatie-LED zal worden uitgeschakeld</string>
-    <string name="quiet_hours_dim_off">Notificatie-LED zal normaal functioneren</string>
     <string name="quiet_hours_haptic">Schakel haptische feedback uit</string>
     <string name="quiet_hours_haptic_on">Haptische feedback zal worden uitgeschakeld</string>
     <string name="quiet_hours_haptic_off">Haptische feedback zal normaal functioneren</string>
@@ -1623,7 +1608,6 @@
     <string name="menu_new_profile_summary">Voeg toe en configureer een nieuw profiel</string>
 
     <!-- Rename Profile Dialog  -->
-    <string name="rename_profile_dialog_title">Hernoem profiel</string>
     <string name="duplicate_profile_name">Profielnaam bestaat al!</string>
 
     <!-- Message when trying to delete the active profile -->
@@ -1663,7 +1647,6 @@
     <string name="soundtone_title">Notificatietoon</string>
 
     <!-- Title for application group setting screen -->
-    <string name="profile_appgroup_title">Appgroep: %s</string>
     <string name="profile_appgroups_title">Appgroepen</string>
     <string name="profile_applist_title">Apps</string>
     <string name="profile_new_appgroup">Nieuwe appgroep</string>
