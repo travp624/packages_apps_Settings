@@ -4005,4 +4005,7 @@ found in the list of installed apps.</string>
 
     <string name="ok">Ok</string>
 
+    <!-- Themes settings #CM -->
+    <string name="themes_settings_title">Themes</string>
+
 </resources>
