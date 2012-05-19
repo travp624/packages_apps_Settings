@@ -33,17 +33,14 @@ import android.preference.CheckBoxPreference;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
 import android.provider.Telephony;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.android.internal.telephony.Phone;
-import com.android.internal.telephony.RILConstants;
 import com.android.internal.telephony.TelephonyProperties;
 
 
@@ -197,7 +194,7 @@ public class ApnEditor extends SettingsPreferenceFragment
             action = fragArgs.getString(EDIT_ACTION);
         } else {
             mUri = intent.getData();
-        };
+        }
 
         mFirstTime = icicle == null;
 

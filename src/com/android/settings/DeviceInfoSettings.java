@@ -32,6 +32,7 @@ import android.provider.Settings;
 import android.util.Log;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
@@ -112,11 +113,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
 
         // Read platform settings for additional system update setting
-        //boolean isUpdateSettingAvailable =
-        //        getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
-        //if (isUpdateSettingAvailable == false) {
+        boolean isUpdateSettingAvailable =
+                getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
+        if (isUpdateSettingAvailable == false) {
             getPreferenceScreen().removePreference(findPreference(KEY_UPDATE_SETTING));
-        //}
+        }
     }
 
     @Override
