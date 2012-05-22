@@ -3865,7 +3865,6 @@ found in the list of installed apps.</string>
     <string name="end_time_title">End</string>
 
     <!-- Display settings screen, notification light settings -->
-    <string name="notification_pulse_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -3900,9 +3899,6 @@ found in the list of installed apps.</string>
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
-
-    <!-- Display settings screen, battery light repeat pulsing title -->
-    <string name="battery_pulse_title">Pulse low battery light</string>
 
     <!-- Profiles settings #CM -->
     <string name="profiles_settings_title">Profiles</string>
