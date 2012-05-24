@@ -32,6 +32,7 @@ import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
@@ -40,6 +41,10 @@ import android.view.IWindowManager;
 import android.view.Surface;
 
 import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -58,6 +63,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mFontSizePref;
     private CheckBoxPreference mBatteryPulse;
     private PreferenceScreen mNotificationPulse;
+    private CheckBoxPreference mEnableChargingLight;
 
     private final Configuration mCurConfig = new Configuration();
     
@@ -87,6 +93,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mScreenTimeoutPreference.setOnPreferenceChangeListener(this);
         disableUnusableTimeouts(mScreenTimeoutPreference);
         updateTimeoutPreferenceDescription(currentTimeout);
+
+        mEnableChargingLight = (CheckBoxPreference) findPreference("eos_display_charginglight");
+        if (!getActivity().getResources().getBoolean(R.bool.config_eos_display_charging_light))
+            ((PreferenceCategory) findPreference("eos_display_other"))
+                    .removePreference(mEnableChargingLight);
+        mEnableChargingLight.setOnPreferenceChangeListener(this);
+        File dataDirectory = getActivity().getDir("eos", Context.MODE_PRIVATE);
+        File chargingLightFile = new File (dataDirectory.getAbsolutePath() + File.separator + "charging_light");
+        mEnableChargingLight.setChecked(chargingLightFile.exists());
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
@@ -280,6 +295,23 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 updateTimeoutPreferenceDescription(value);
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
+            }
+        } else if (preference.equals(mEnableChargingLight)) {
+            Boolean valueB = (Boolean) objValue;
+            File dataDirectory = getActivity().getDir("eos", Context.MODE_PRIVATE);
+            File chargingLightFile = new File (dataDirectory.getAbsolutePath() + File.separator + "charging_light");
+            try {
+                if (valueB.booleanValue()){
+                    chargingLightFile.createNewFile();
+                }else {
+                    chargingLightFile.delete();
+                }
+                BufferedWriter writer = new BufferedWriter(new FileWriter(getActivity().getResources().getString(R.string.eos_display_charging_light_location)));
+                String output = "" + (valueB ? 0 : 1);
+                writer.write(output.toCharArray(), 0, output.toCharArray().length);
+                writer.close();
+            } catch (IOException e) {
+                return false;
             }
         }
         if (KEY_FONT_SIZE.equals(key)) {

@@ -64,4 +64,14 @@
         android:title="@string/battery_pulse_title"
         android:persistent="false" />
 
+    <PreferenceCategory
+        android:key="eos_display_other"
+        android:title="@string/eos_display_other" >
+
+        <CheckBoxPreference
+            android:key="eos_display_charginglight"
+            android:title="@string/eos_display_charginglight" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
