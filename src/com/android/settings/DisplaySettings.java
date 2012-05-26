@@ -96,7 +96,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mEnableChargingLight = (CheckBoxPreference) findPreference("eos_display_charginglight");
         if (!getActivity().getResources().getBoolean(R.bool.config_eos_display_charging_light))
-            ((PreferenceCategory) findPreference("eos_display_other"))
+            ((PreferenceScreen) findPreference("eos_display_other"))
                     .removePreference(mEnableChargingLight);
         mEnableChargingLight.setOnPreferenceChangeListener(this);
         File dataDirectory = getActivity().getDir("eos", Context.MODE_PRIVATE);
