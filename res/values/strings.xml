@@ -4034,4 +4034,6 @@ found in the list of installed apps.</string>
     <string name="usb_unmount_inform_text">USB storage will be unmounted.</string>
     <string name="usb_mount_location"></string>  
 
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
 </resources>
